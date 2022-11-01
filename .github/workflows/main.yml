@@ -31,8 +31,6 @@ jobs:
 
       - name: Build 🏗
         run: make build
-        with:
-          node-version: 12
 
       - name: Deploy to GH Pages 🚀
         if: ${{ github.event_name != 'pull_request' }}
